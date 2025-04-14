@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>감성DVD영상</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #f8e1e7;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #d16d86;
+    }
+    nav {
+      background-color: #f3c1d2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #c04d6c;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .portfolio img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      margin: 20px 0;
+      border-left: 4px solid #d16d86;
+      padding-left: 10px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .contact-form button {
+      background-color: #d16d86;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .portfolio img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>감성 DVD 영상</h1>
+  </header>
+  <nav>
+    <a href="#portfolio">포트폴리오</a>
+    <a href="#testimonials">후기</a>
+    <a href="#contact">문의하기</a>
+  </nav>
+  <section id="portfolio">
+    <h2>포트폴리오</h2>
+    <div class="portfolio">
+      <img src="video1-thumbnail.jpg" alt="웨딩 영상 샘플">
+      <img src="video2-thumbnail.jpg" alt="행사 영상 샘플">
+      <img src="video3-thumbnail.jpg" alt="공연 영상 샘플">
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2>고객 후기</h2>
+    <div class="testimonials">
+      <blockquote>“정말 감동적인 영상이었어요. 다시 봐도 눈물이 납니다.” – 수진님</blockquote>
+      <blockquote>“중요한 날을 이렇게 아름답게 남겨주셔서 감사합니다.” – 민호님</blockquote>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>문의하기</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <textarea rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+</body>
+</html>
